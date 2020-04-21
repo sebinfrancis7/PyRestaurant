@@ -1,0 +1,12 @@
+{% extends 'base2.html' %}
+
+
+{% block content %}
+<h1><ul>OUR BRANCHES</ul></h1>
+<ul>
+    {% for branch in branches %}
+    <li>BRANCH LOCATION:&nbsp;&nbsp;&nbsp;&nbsp;<h3>{{ branch.location}}</h3>&nbsp;BRANCH MANAGER:&nbsp;&nbsp;&nbsp;&nbsp;<h3>{{ branch.manager }}</h3> </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

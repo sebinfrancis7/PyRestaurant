@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>MENU</h1>
+<ul>
+    {% for product in products %}
+    <li><h2>{{ product.name}}&nbsp;&nbsp;&nbsp;&nbsp;</h2> <h3>RS.{{ product.price }}&nbsp;&nbsp;&nbsp;&nbsp;</h3> <h4>{{ product.description }}</h4></li>
+    {% endfor %}
+</ul>
+{% endblock %}

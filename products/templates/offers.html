@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>OFFER INFORMATION</h1>
+<ul>
+    {% for offer in offers %}
+    <li><h2>OFFER CODE&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{ offer.code}}&nbsp;&nbsp;&nbsp;&nbsp;</h2> <h2>DISCOUNT : RS.{{ offer.discount }}&nbsp;&nbsp;&nbsp;&nbsp;</h2> <h3>{{ offer.description }}</h3></li>
+    {% endfor %}
+</ul>
+{% endblock %}
